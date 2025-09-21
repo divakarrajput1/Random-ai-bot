@@ -8,11 +8,11 @@ This project demonstrates:
 - Running it on **Kubernetes**  
 - Using **KEDA HTTP ScaledObject** to **auto-scale pods based on incoming HTTP traffic**  
 
-Perfect for learning **cloud-native AI deployment and autoscaling concepts** 🚀  
+Perfect for learning **autoscaling concepts** 🚀  
 
 ---
 
-## ✨ Features
+##  Features
 - **REST API**
   - `POST /infer` → Returns a random sentiment + confidence score  
   - `GET /healthz` → Health check  
@@ -23,7 +23,7 @@ Perfect for learning **cloud-native AI deployment and autoscaling concepts** �
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - **Language**: Go (Golang)  
 - **Containerization**: Docker Hub  
 - **Orchestration**: Kubernetes  
@@ -31,7 +31,7 @@ Perfect for learning **cloud-native AI deployment and autoscaling concepts** �
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Deploy on Kubernetes
 Apply all Kubernetes manifests (Deployment, Service, KEDA ScaledObject):

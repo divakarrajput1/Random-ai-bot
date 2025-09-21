@@ -1,0 +1,21 @@
+﻿apiVersion: http.keda.sh/v1alpha1
+kind: HTTPScaledObject
+metadata:
+  name: ai-service
+spec:
+  hosts:
+  - ai-service.local
+  scaleTargetRef:
+    name: ai-service
+    kind: Deployment
+    apiVersion: apps/v1
+    service: ai-service
+    port: 8080
+  replicas:
+    min: 0
+    max: 5
+  scalingMetric:
+    requestRate:
+      targetValue: 10
+      window: 30s
+      granularity: 1s
